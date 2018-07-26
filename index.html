@@ -39,18 +39,160 @@
             <p>
                 <a href="#" class="btn btn-default btn-lg" role="button">Prueba de boton</a>
                 <button type="submit" class="btn btn-danger" role="button">Otro boton</button>
-                <input type="button" value="Info" class="btn btn-info"> <!-- btn o btn-s ... definen el tamaño del boton -->
+                <input type="button" value="Info" class="btn btn-info">
+                <!-- btn o btn-s ... definen el tamaño del boton -->
                 <button type="submit" class="btn-primary btn-sm" role="button">Primary</button>
                 <button type="submit" class="btn btn-success btn-xs" role="button">Success</button>
                 <button type="submit" class="btn btn-warning btn-lg" role="button">Warning</button>
                 <button type="submit" class="btn btn-link btn-lg" role="button">Link</button>
                 <!-- Si añades la caracterictica disabled puedes deshabilitar botones o links -->
                 <button type="submit" class="btn-primary btn-sm" role="button" disabled>Otro boton</button>
-                <a href="#" class="btn btn-primary btn-lg disabled" role="button" >Prueba de boton</a>
-            
-            <div class="btn-group btn-group-lg" role="group"></div>
-            
+                <a href="#" class="btn btn-primary btn-lg disabled" role="button">Prueba de boton</a>
+
+                <div class="btn-group btn-group-lg" role="group">
+                    <button type="submit" class="btn btn-default" role="button">Small</button>
+                    <button type="submit" class="btn btn-default" role="button">Medium</button>
+                    <button type="submit" class="btn btn-default" role="button">Large</button>
+                </div>
+
             </p>
+        </div>
+    </div>
+
+    <!-- Estructura del Grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>Colum 1</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>Colum 2</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>Colum 3</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <h3>Colum 4</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+        </div>
+    </div>
+
+    <!-- Grid con solo "col" La diferencia se encuentra en como se encogen las columnas -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3>Colum 1</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col">
+                <h3>Colum 2</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col">
+                <h3>Colum 3</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+            <div class="col">
+                <h3>Colum 4</h3>
+                Otro texto para rellenar y comprobar como funciona el grid
+            </div>
+        </div>
+    </div>
+
+    <!-- Otro simple grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12">
+                <h4>
+                    <a href="#col1Content" data-toggle="collapse">Pongamos un collapse</a>
+                </h4>
+                <div id="col1Content" class="collapse show"> Algo de contenido sin más</div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-8 col-xs-12">
+                <h4>
+                    <a href="#col2Content" data-toggle="collapse">Pongamos un collapse</a>
+                </h4>
+                <div id="col2Content" class="collapse"> Algo de contenido sin más, para la columna 2.</div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <h4>
+                    <a href="#col3Content" data-toggle="collapse">Pongamos un collapse</a>
+                </h4>
+                <div id="col3Content" class="collapse"> Algo de contenido sin más, para la columna 3.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Eliminar contenidos en función del tamaño de la ventana -->
+    <div class="container">
+        <div class="card d-sm-none d-md-none d-lg-none">
+            <p>Screen &lt; 768px</p>
+        </div>
+        <div class="card d-md-none d-lg-none">
+            <p>Screen &gt; 768px y &lt; 992px</p>
+        </div>
+        <div class="card d-lg-none">
+            <p>Screen &gt; 992px y &lt; 1200px</p>
+        </div>
+        <div class="card">
+            <p>Screen &gt; 1200px</p>
+        </div>
+    </div>
+
+    <!-- Tables -->
+    <div class="container">
+        <div class="row">
+            <!-- col-md-offset-6 deja un espacio de seis en blanco a la izquierda -->
+            <div class="col-6 col-md-offset-6">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <td colspan="4">Best Baseball Players</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <!-- You can adjust the width of table columns as well -->
+                            <th class="col-md-2">
+                                </th>
+
+                                <!-- Use text alignment like text-center or text-right -->
+                                <th class="text-center">Average</th>
+                                    <th class="text-center">RBIs</th>
+                                        <th class="text-center">Homeruns</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Hank Aaron*</a>
+                            </td>
+                            <td>.305</td>
+                            <td>2297</td>
+                            <td>755</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Babe Ruth*</a>
+                            </td>
+                            <td>.342</td>
+                            <td>2214</td>
+                            <td>714</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="#">Barry Bonds</a>
+                            </td>
+                            <td>.298</td>
+                            <td>1996</td>
+                            <td>762</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
